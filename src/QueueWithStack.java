@@ -16,10 +16,7 @@ public class QueueWithStack {
     public Object dequeue() {
         if (s1.isEmpty())
             return null;
-
-        Object item = s1.peek();
-        s1.pop();
-        return item;
+        return s1.pop();
     }
 
     public Object front() {
