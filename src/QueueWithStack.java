@@ -44,5 +44,14 @@ public class QueueWithStack {
 
         System.out.println("dequeue : " + queue.dequeue());
         queue.display();
+        
+         int min=10;
+        for(int i=0;i<top;i++)
+        {
+            if(min<queue.front)
+                min=queue.front;
+        }
+        
+        
     }
 }
